@@ -1,0 +1,24 @@
+name: 'mirror_error_example'
+version: 0.0.1
+description: A web app built using polymer.dart.
+#author: Your Name <email@example.com>
+#homepage: https://www.example.com
+
+environment:
+  sdk: '>=1.9.0 <2.0.0'
+
+dependencies:
+  browser: any
+  reflectable: any
+  web_components: any
+
+transformers:
+- web_components:
+    entry_points: web/index.html
+- reflectable:
+    entry_points: web/index.dart
+- $dart2js:
+    minify: true
+    commandLineOptions:
+    - --trust-type-annotations
+    - --trust-primitives
