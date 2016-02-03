@@ -1,7 +1,7 @@
 # A reproduction of the issue where InstanceMirror.type.instanceMembers return an empty map
 
 After consulting sigurdm here:https://github.com/dart-lang/reflectable/issues/74
-This behaviour is determined feature rather than misbehaviour.
+This behaviour is comfirmed a feature rather than a misbehaviour(Although not a friendly behaviour).
 
 To populate the map, including instanceInvokeCapability as the following:
 <code><pre>
